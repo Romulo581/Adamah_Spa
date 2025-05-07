@@ -1,0 +1,115 @@
+        :root {
+            --verde-musgo-escuro: #2E4C40;
+            --verde-claro: #A3B9A0;
+            --branco-suave: #F9F7F3;
+            --dourado: #CBAE88;
+            --texto: #333333;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--branco-suave);
+            color: var(--texto);
+            scroll-behavior: smooth;
+        }
+
+        .header-bg {
+            background-color: var(--verde-musgo-escuro);
+        }
+
+        .text-dourado {
+            color: var(--dourado);
+        }
+
+        .bg-dourado {
+            background-color: var(--dourado);
+        }
+
+        .border-dourado {
+            border-color: var(--dourado);
+        }
+
+        .bg-verde-claro {
+            background-color: var(--verde-claro);
+        }
+
+        .hover-dourado:hover {
+            color: var(--dourado);
+        }
+
+        .hover-bg-dourado:hover {
+            background-color: var(--dourado);
+        }
+
+        .hover-bg-verde-musgo:hover {
+            background-color: var(--verde-musgo-escuro);
+        }
+
+        .bg-verde-musgo {
+            background-color: var(--verde-musgo-escuro);
+        }
+
+        .text-verde-musgo {
+            color: var(--verde-musgo-escuro);
+        }
+
+        .hero-overlay {
+            background: rgba(46, 76, 64, 0.4);
+        }
+
+        .product-card {
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .therapist-card {
+            transition: all 0.3s ease;
+        }
+
+        .therapist-card:hover {
+            transform: scale(1.03);
+        }
+
+        .floating-btn {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .section-divider {
+            height: 100px;
+            background: linear-gradient(to bottom, var(--branco-suave), var(--verde-claro));
+        }
+
+        .section-divider-reverse {
+            height: 100px;
+            background: linear-gradient(to bottom, var(--verde-claro), var(--branco-suave));
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
